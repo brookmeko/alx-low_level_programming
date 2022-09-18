@@ -2,16 +2,31 @@
 #include "main.h"
 
 /**
- *print_line - prints a straight line
- *@n: parameter
- *Return:returns nothing
+ *print_square - prints squares
+ *@size: parameter
+ *Return: returns nothing
  */
 
-void print_line(int n)
+void print_square(int size)
 {
-	while (n-- > 0)
+	int inc1, inc2;
+
+	if (size > 0)
 	{
-		putchar('_');
+		for (inc1 = 0; inc1 < size; inc1++)
+		{
+			for (inc2 = 0; inc2 < (size - 1); inc2++)
+			{
+				putchar('#');
+			}
+
+			putchar('#');
+			putchar('\n');
+		}
 	}
-	putchar('\n');
+	else
+	{
+		putchar('\n');
+	}
+
 }
