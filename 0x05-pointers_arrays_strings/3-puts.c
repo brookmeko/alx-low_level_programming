@@ -19,4 +19,4 @@ void _puts(char *str)
 		i++;
 	}
 	putchar(10);
-} 
+}
