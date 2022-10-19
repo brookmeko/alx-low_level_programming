@@ -13,6 +13,7 @@ char **strtow(char *str)
 	int i, w, j, k, count, m, wordf;
 	char **p;
 	char *x;
+	
 	w = 0;
 	j = 0;
 	i = 0;
