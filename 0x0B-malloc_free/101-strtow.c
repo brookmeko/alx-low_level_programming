@@ -50,7 +50,7 @@ char **strtow(char *str)
 				free(p);
 				return (NULL);
 			}
-			for m = 0; wordf < i; wordf++)
+			for (m = 0; wordf < i; wordf++)
 			{
 				p[j][m] = str[wordf];
 				m++;
